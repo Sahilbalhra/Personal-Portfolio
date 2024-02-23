@@ -2,108 +2,108 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from "@/../public/corpcomment.png";
-import rmtdevImg from "@/../public/rmtdev.png";
-import wordanalyticsImg from "@/../public/wordanalytics.png";
-
+import wordanalyticsImg from '@/../public/wordanalytics.png';
+import Steaming from '@/../public/Steaming Book.png'
+import Intro from '@/../public/IntroImg.jpg';
 
 export const links = [
-  {
-    name: 'Home',
-    hash: '#home',
-  },
-  {
-    name: 'About',
-    hash: '#about',
-  },
-  {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
-    name: 'Skills',
-    hash: '#skills',
-  },
-  {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
-    name: 'Contact',
-    hash: '#contact',
-  },
+    {
+        name: 'Home',
+        hash: '#home',
+    },
+    {
+        name: 'About',
+        hash: '#about',
+    },
+    {
+        name: 'Projects',
+        hash: '#projects',
+    },
+    {
+        name: 'Skills',
+        hash: '#skills',
+    },
+    {
+        name: 'Experience',
+        hash: '#experience',
+    },
+    {
+        name: 'Contact',
+        hash: '#contact',
+    },
 ] as const;
 
 export const experiencesData = [
-  {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
-    description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2019',
-  },
-  {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
-  },
-  {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2021 - present',
-  },
+    {
+        title: 'SDE Intern',
+        company: 'Marvio360',
+        location: 'Pune, Maharashtra',
+        description:
+            'Streamlining the online booking process to ensure it is both easy and efficient for customers. Implementing a responsive design approach, ensuring the website functions seamlessly across various screen dimensions and devices while maintaining optimal functionality.Developing multiple informative pages within the website to provide users with a comprehensive understanding of its offerings and features',
+        icon: React.createElement(LuGraduationCap),
+        date: 'April 2022 - Sept 2022',
+    },
+    {
+        title: 'FrontEnd engineerr',
+        location: 'Noida , Uttar Pradesh',
+        company: 'Turns',
+        description:
+            'Developed a comprehensive marketing software solution for targeted communication, including email and text messaging, based on user segments. ntegrated a robust business manager functionality, encompassing reporting, order creation, and more, to streamline operations and enhance user experience.',
+        icon: React.createElement(CgWorkAlt),
+        date: 'Dec 2022 - Dec 2023',
+    },
+    {
+        title: 'SDE-1',
+        location: 'Noida , Uttar Pradesh',
+        company: 'Turns',
+        description:
+            'Developed geofenced functionality to facilitate route creation, catering to the needs of laundromat business owners and their drivers.  Implemented automatic driver assignment feature to streamline operations. Implemented multi-role authentication system for enhanced security. Designed and implemented a Refresh Token mechanism to ensure a seamless experience for laundromat business owners.',
+        icon: React.createElement(FaReact),
+        date: 'Jan 2024 - present',
+    },
 ] as const;
 
 export const projectsData = [
-  {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+    {
+        title: 'Streaming App',
+        description: 'I have developed a streaming application, similar to Amazon Prime, that leverages the power of the TMDB API to fetch movie information and the YouTube API to play trailers on a React Player.',
+        tags: ['React', 'Next.js', 'Firebase', 'Tailwind',],
+        imageUrl: Steaming,
+    },
+    {
+        title: 'Journey',
+        description: 'A full-stack MERN web application that combines the power of React.js, React-Router-DOM, Redux, Material UI, JSON Web Tokens (JWT), Google Authentication, MongoDB, Multer, Express, and Node.js.',
+        tags: ['React', 'Javascript', 'Next.js', 'Tailwind', 'Redux', 'MongoDB', 'Express'],
+        imageUrl: Intro,
+    },
+    {
+        title: 'Word Analytics',
+        description:
+            'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
+        tags: ['React', 'Next.js', 'Tailwind', 'Framer'],
+        imageUrl: wordanalyticsImg,
+    },
 ] as const;
 
 export const skillsData = [
-  'HTML5',
-  'CSS3',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Git',
-  'Tailwind',
-  'Material UI',
-  'Shadcn UI',
-  'MongoDB',
-  'Redux',
-  'GraphQL',
-  'Apollo',
-  'Express',
-  // 'PostgreSQL',
-  // 'Python',
-  // 'Django',
-  'Framer Motion',
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Next.js',
+    'Node.js',
+    'Git',
+    'Tailwind',
+    'Material UI',
+    'Shadcn UI',
+    'MongoDB',
+    'Redux',
+    'GraphQL',
+    'Apollo',
+    'Express',
+    // 'PostgreSQL',
+    // 'Python',
+    // 'Django',
+    'Framer Motion',
 ] as const;
