@@ -2,6 +2,11 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
+import { AiFillHome, AiFillInfoCircle } from 'react-icons/ai';
+import { MdOutlineWork } from "react-icons/md";
+import { IoMdContact } from "react-icons/io";
+import { GiSkills } from "react-icons/gi";
+import { BsPersonWorkspace } from "react-icons/bs";
 import wordanalyticsImg from '@/../public/wordanalytics.png';
 import Steaming from '@/../public/Steaming Book.png'
 import Intro from '@/../public/IntroImg.jpg';
@@ -10,26 +15,32 @@ export const links = [
     {
         name: 'Home',
         hash: '#home',
+        icon:React.createElement(AiFillHome),
     },
     {
         name: 'About',
         hash: '#about',
+        icon:React.createElement(AiFillInfoCircle),
     },
     {
         name: 'Projects',
         hash: '#projects',
+        icon:React.createElement(BsPersonWorkspace),
     },
     {
         name: 'Skills',
         hash: '#skills',
+        icon:React.createElement(GiSkills),
     },
     {
         name: 'Experience',
         hash: '#experience',
+        icon:React.createElement(MdOutlineWork),
     },
     {
         name: 'Contact',
         hash: '#contact',
+        icon:React.createElement(IoMdContact),
     },
 ] as const;
 
