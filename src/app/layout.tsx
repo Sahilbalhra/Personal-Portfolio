@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
-import BottomNavigation from '@/components/BottomNav';
-import Header from '@/components/Header';
 import ThemeSwitch from '@/components/ThemeSwitch';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import ThemeContextProvider from '@/context/theme-context';
