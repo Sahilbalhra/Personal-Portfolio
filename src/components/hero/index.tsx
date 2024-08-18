@@ -13,9 +13,9 @@ import { SubTitle } from './SubTitle';
 
 const Hero = () => {
 	return (
-		<div id="home" className="flex justify-center items-center bg-transparent w-full">
+		<div id="home" className="flex justify-center items-center bg-transparent w-full mb-28 ">
 			<div className="flex flex-col-reverse px-4 md:flex-row md:items-center justify-evenly md:gap-10 md:px-4 ">
-				<div className="flex flex-col w-full md:w-2/3 gap-10 pb-10 md:py-44 md:items-start">
+				<div className="flex flex-col w-full md:w-2/3 gap-10 pb-10 md:pt-44 md:items-start">
 					<TextGenerateEffect
 						words={sentence}
 						className="text-center text-[30px] md:text-5xl md:text-left"
@@ -53,7 +53,7 @@ const Hero = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="px-8 md:px-0 py-10 md:py-0 w-full md:w-1/3 md:flex h-fit">
+				<div className="px-8 md:px-0 py-10 md:pt-44 w-full md:w-1/3 md:flex h-fit items-center">
 					<ThreeDCard />
 				</div>
 			</div>

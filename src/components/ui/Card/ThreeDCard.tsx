@@ -10,7 +10,7 @@ function ThreeDCard() {
 	return (
 		<CardContainer className="shadow-xl inter-var shadow-black/40 rounded-b-xl max-w-fit hover:shadow-none">
 			<CardItem
-				className="w-[300] border dark:border-black/[0.2] border-black/[0.1] rounded-xl dark:bg-primary "
+				className="w-[300] border dark:border-black/[0.2] border-black/[0.1] rounded-xl bg-primary "
 				translateZ="100"
 			>
 				<div className="flex flex-row gap-2 py-2 pl-4">
