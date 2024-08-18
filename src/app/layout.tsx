@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
 import BottomNavigation from '@/components/BottomNav';
@@ -19,19 +19,24 @@ export const metadata: Metadata = {
 	keywords:
 		'Sahil, Software Developer, Front-end Developer, UI/UX Design, React Developer, Next.js, Portfolio,Back-end Developer,Computer Science',
 	authors: [{ name: 'Sahil' }],
-	// viewport: 'width=device-width, initial-scale=1.0',
 	robots: 'index, follow',
+	icons: { icon: '/sahil_logo.svg' },
+};
+
+export const viewport: Viewport = {
+	width: 'device-width',
+	initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={`${inter.className}`}>
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
-						<Header />
+						{/* <Header /> */}
 						{children}
-						<BottomNavigation />
+						{/* <BottomNavigation /> */}
 						<Toaster position="top-right" />
 						<ThemeSwitch />
 					</ActiveSectionContextProvider>

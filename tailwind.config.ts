@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette');
+
 const config = {
 	darkMode: ['class'],
 	content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
@@ -63,25 +64,29 @@ const config = {
 					from: { height: 'var(--radix-accordion-content-height)' },
 					to: { height: '0' },
 				},
-				spotlight: {
+				orbit: {
 					'0%': {
-						opacity: '0',
-						transform: 'translate(-72%, -62%) scale(0.5)',
+						transform: 'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)',
 					},
 					'100%': {
-						opacity: '1',
-						transform: 'translate(-50%,-40%) scale(1)',
+						transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
+					},
+				},
+				scroll: {
+					to: {
+						transform: 'translate(calc(-50% - 0.5rem))',
 					},
 				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				spotlight: 'spotlight 2s ease .75s 1 forwards',
+				orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+				scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
 			},
 		},
+		plugins: [require('tailwindcss-animate'), addVariablesForColors],
 	},
-	plugins: [require('tailwindcss-animate'), addVariablesForColors],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {

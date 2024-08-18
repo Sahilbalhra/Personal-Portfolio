@@ -13,9 +13,9 @@ import { SubTitle } from './SubTitle';
 
 const Hero = () => {
 	return (
-		<div id="home" className="flex justify-center w-full h-screen  items-center bg-transparent max-md:h-full ">
-			<div className="flex flex-col md:flex-row md:items-center justify-evenly w-full md:gap-10 px-10  md:px-4 ">
-				<div className="flex flex-col w-full md:w-2/3 gap-10 py-44  md:items-start">
+		<div id="home" className="flex justify-center items-center bg-transparent w-full">
+			<div className="flex flex-col-reverse px-4 md:flex-row md:items-center justify-evenly md:gap-10 md:px-4 ">
+				<div className="flex flex-col w-full md:w-2/3 gap-10 pb-10 md:py-44 md:items-start">
 					<TextGenerateEffect
 						words={sentence}
 						className="text-center text-[30px] md:text-5xl md:text-left"
@@ -33,7 +33,7 @@ const Hero = () => {
 							</BorderButton>
 						))}
 					</div>
-					<div className="flex flex-row gap-6 w-full">
+					<div className="flex flex-row gap-6 w-full flex-wrap justify-center md:justify-start">
 						<Link href="https://github.com/Sahilbalhra" target="_blank">
 							<Button className=" rounded-full py-6 flex flex-row gap-2 text-md">
 								GitHub <FaGithub className="w-6 m-0 h-6" />
@@ -53,7 +53,7 @@ const Hero = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="px-8 md:px-0 w-1/3 hidden lg:flex h-fit">
+				<div className="px-8 md:px-0 py-10 md:py-0 w-full md:w-1/3 md:flex h-fit">
 					<ThreeDCard />
 				</div>
 			</div>
