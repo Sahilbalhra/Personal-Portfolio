@@ -1,52 +1,44 @@
-"use client";
+'use client';
 
-import React from "react";
-import SectionHeading from "../sectionHeading";
-import { skillsData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
+import React from 'react';
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
+import { motion } from 'framer-motion';
+
+import SectionHeading from '../sectionHeading';
+import SkillHeader from './SkillHeader';
+import { SkillSection } from './SkillSection';
+import { InfiniteMovingCardsDemo } from './SkillsCards';
+
+const Skills = () => {
+	return (
+		<section className="w-full mb-28 scroll-mt-28 sm:mb-40" id="skills">
+			<div className="p-12 bg-white dark:bg-transparent">
+				<motion.div
+					initial={{
+						opacity: 0,
+						y: 20,
+					}}
+					animate={{
+						opacity: 1,
+						y: 0,
+					}}
+					transition={{
+						duration: 1,
+					}}
+					className="div"
+				>
+					<SectionHeading>My skills</SectionHeading>
+				</motion.div>
+				<SkillHeader />
+				<div className="  my-2 hidden md:flex justify-center">
+					<SkillSection />
+				</div>
+				<div className="my-2">
+					<InfiniteMovingCardsDemo />
+				</div>
+			</div>
+		</section>
+	);
 };
 
-export default function Skills() {
-  const { ref } = useSectionInView("Skills");
-
-  return (
-    <section
-      id="skills"
-      ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
-    >
-      <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
-      </ul>
-    </section>
-  );
-}
+export default Skills;
