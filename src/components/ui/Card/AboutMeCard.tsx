@@ -19,7 +19,7 @@ function AboutMeCard() {
 					<div className="w-3 h-3 transition-all ease-linear bg-green-500 rounded-full hover:scale-125 hover:cursor-pointer"></div>
 				</div>
 				<Image
-					src={'/about_me.png'}
+					src={'/images/about_me.webp'}
 					height="300"
 					width="300"
 					className="object-cover rounded-b-xl group-hover/card:shadow-xl"
