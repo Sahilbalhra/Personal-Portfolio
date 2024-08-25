@@ -1,6 +1,5 @@
 'use client';
 
-// import { experience } from '@/utils/objects/Sections';
 import { experiencesData } from '@/lib/data';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
