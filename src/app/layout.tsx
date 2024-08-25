@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		'Sahil, Software Developer, Front-end Developer, UI/UX Design, React Developer, Next.js, Portfolio,Back-end Developer,Computer Science',
 	authors: [{ name: 'Sahil' }],
 	robots: 'index, follow',
-	icons: { icon: '/sahil_logo.svg' },
+	icons: { icon: '/icons/sahil_logo.svg' },
 };
 
 export const viewport: Viewport = {
@@ -32,9 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={`${inter.className}`}>
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
-						{/* <Header /> */}
 						{children}
-						{/* <BottomNavigation /> */}
 						<Toaster position="top-right" />
 						<ThemeSwitch />
 					</ActiveSectionContextProvider>
