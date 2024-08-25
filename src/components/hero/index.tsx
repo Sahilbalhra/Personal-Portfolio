@@ -6,7 +6,7 @@ import ThreeDCard from '@/components/ui/Card/ThreeDCard';
 import { Button } from '@/components/ui/button';
 import { BorderButton } from '@/components/ui/moving-border';
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
-import { sentence, skills } from '@/utils/objects/Sections';
+import { sentence, skills } from '@/lib/data';
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { SubTitle } from './SubTitle';

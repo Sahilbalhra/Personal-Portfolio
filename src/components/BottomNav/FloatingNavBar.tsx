@@ -2,6 +2,8 @@
 
 import { CardContainer, CardItem } from '@/components/ui/acertinity-card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { useTheme } from '@/context/theme-context';
+import { BsMoon, BsSun } from 'react-icons/bs';
 
 import { Button } from '../../components/ui/button';
 
@@ -14,6 +16,7 @@ const FloatingNavBar = ({
 		link: string;
 	}[];
 }) => {
+	const { theme, toggleTheme } = useTheme();
 	const handleClick = (link: string) => {
 		const section = document.getElementById(link);
 		if (section) {
@@ -29,12 +32,13 @@ const FloatingNavBar = ({
 					{menus.map((menu) => (
 						<TooltipProvider key={menu.link}>
 							<Tooltip>
-								<TooltipTrigger>
+								<TooltipTrigger asChild>
 									<Button
 										variant={'menu'}
 										size={'menuicon'}
 										className={'transition-all hover:scale-125 max-md:scale-100 ease-linear'}
 										onClick={() => handleClick(menu.link)}
+										// asChild
 									>
 										{menu.icons}
 									</Button>
@@ -43,6 +47,23 @@ const FloatingNavBar = ({
 							</Tooltip>
 						</TooltipProvider>
 					))}
+					<div className="bg-primary w-[1px] h-10"></div>
+					<TooltipProvider>
+						<Tooltip>
+							<TooltipTrigger asChild>
+								<Button
+									variant={'menu'}
+									size={'menuicon'}
+									className={'transition-all hover:scale-125 max-md:scale-100 ease-linear'}
+									onClick={toggleTheme}
+									// asChild
+								>
+									{theme === 'light' ? <BsSun /> : <BsMoon />}
+								</Button>
+							</TooltipTrigger>
+							<TooltipContent>Mode</TooltipContent>
+						</Tooltip>
+					</TooltipProvider>
 				</CardItem>
 			</CardContainer>
 		</div>

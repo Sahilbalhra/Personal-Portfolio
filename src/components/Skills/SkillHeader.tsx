@@ -1,4 +1,4 @@
-import { attraction } from '@/utils/objects/Sections';
+import { attraction } from '@/lib/data';
 
 import { FlipWords } from '../ui/flip-words';
 

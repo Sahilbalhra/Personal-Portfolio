@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
-import ThemeSwitch from '@/components/ThemeSwitch';
+import { Toaster } from '@/components/ui/sonner';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import ThemeContextProvider from '@/context/theme-context';
-import { Toaster } from 'react-hot-toast';
 
 import './globals.css';
 
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
 		'Sahil, Software Developer, Front-end Developer, UI/UX Design, React Developer, Next.js, Portfolio,Back-end Developer,Computer Science',
 	authors: [{ name: 'Sahil' }],
 	robots: 'index, follow',
-	icons: { icon: '/sahil_logo.svg' },
+	icons: { icon: '/icons/sahil_logo.svg' },
 };
 
 export const viewport: Viewport = {
@@ -32,11 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={`${inter.className}`}>
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
-						{/* <Header /> */}
 						{children}
-						{/* <BottomNavigation /> */}
-						<Toaster position="top-right" />
-						<ThemeSwitch />
+						<Toaster />
 					</ActiveSectionContextProvider>
 				</ThemeContextProvider>
 			</body>

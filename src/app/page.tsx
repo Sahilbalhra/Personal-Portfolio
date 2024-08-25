@@ -6,7 +6,7 @@ import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import Hero from '@/components/hero';
 import { Spotlight } from '@/components/ui/Spotlight';
-import { menus } from '@/utils/objects/Sections';
+import { menus } from '@/lib/data';
 
 export default function Home() {
 	return (
