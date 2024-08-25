@@ -2,7 +2,7 @@ import About from '@/components/About';
 import FloatingNavBar from '@/components/BottomNav/FloatingNavBar';
 import Contact from '@/components/Contact';
 import ExperienceSection from '@/components/Experience/Experience';
-// import Projects from '@/components/Projects';
+import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import Hero from '@/components/hero';
 import { Spotlight } from '@/components/ui/Spotlight';
@@ -17,7 +17,7 @@ export default function Home() {
 			<About />
 			<Skills />
 			<ExperienceSection />
-			{/* <Projects /> */}
+			<Projects />
 			<Contact />
 			<FloatingNavBar menus={menus} />
 		</div>

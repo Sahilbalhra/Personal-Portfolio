@@ -11,16 +11,13 @@ const ExperienceSection = () => {
 		<div id="experience" className="w-full bg-white/60 dark:bg-transparent md:py-20 py-6 ">
 			<div className="flex flex-col items-center gap-4  w-full z-50 pb-10 ">
 				<SectionHeading> My Experience</SectionHeading>
-				{/* <div className="sticky top-0 px-6 py-2  z-40 font-light text-center text-2xl leading-snug tracking-wider  backdrop-blur-2xl w-fit rounded-full">
-					My Experience
-				</div> */}
 				<VerticalTimeline className="" lineColor="#22c55e">
 					<div className="flex flex-col md:w-4/5 justify-center lg:w-full w-full  gap-4 items-center">
 						{experiencesData.map((data, index) => {
 							return (
 								<VerticalTimelineElement
 									key={index}
-									className="vertical-timeline-element--work bg-transparent "
+									className="vertical-timeline-element--work"
 									contentArrowStyle={{
 										borderRight: '2px solid #22c55e',
 									}}
@@ -47,9 +44,9 @@ const ExperienceSection = () => {
 										} `}
 									>
 										<div className="flex flex-col gap-2 h-full  ">
-											<div className="text-xl font-semibold tracking-wider capitalize">{data.title}</div>
-											<div className="text-lg font-light tracking-wider">{data.location}</div>
-											<div className="text-sm font-extralight tracking-wider line-clamp-6">{data.description}</div>
+											<div className="text-xl font-bold tracking-wider capitalize">{data.title}</div>
+											<div className="text-lg font-semibold tracking-wider">{data.location}</div>
+											<div className="text-sm font-light tracking-wider">{data.description}</div>
 										</div>
 									</div>
 								</VerticalTimelineElement>

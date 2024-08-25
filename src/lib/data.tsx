@@ -159,26 +159,90 @@ export const experiencesData = [
 	},
 ] as const;
 
-export const projectsData = [
+export const projects = [
 	{
-		title: 'Streaming App',
+		name: 'E-book Client',
 		description:
-			'I have developed a streaming application, similar to Amazon Prime, that leverages the power of the TMDB API to fetch movie information and the YouTube API to play trailers on a React Player.',
-		tags: ['React', 'Next.js', 'Firebase', 'Tailwind'],
-		// imageUrl: Steaming,
+			'An interactive web application designed for book enthusiasts, allowing users to browse a vast collection of e-books. Users can download books for offline reading, provide reviews, and authenticate their accounts for a personalized experience. The platform ensures a smooth and intuitive user interface, making it easy to discover new books and manage their reading lists.',
+		features: [
+			'Extensive book catalog',
+			'Book downloads for offline reading',
+			'User-generated reviews and ratings',
+			'Secure user authentication and personalized recommendations',
+		],
+		technologies: ['Next.js', 'TypeScript', 'NextAuth', 'Tailwind CSS', 'MongoDB'],
+		links: {
+			demo: 'https://ebook-client.vercel.app/',
+			github: 'https://github.com/Sahilbalhra/E-book-Client',
+		},
+		image: '/images/Ebook-client.webp',
 	},
 	{
-		title: 'Journey',
+		name: 'E-book Dashboard',
 		description:
-			'A full-stack MERN web application that combines the power of React.js, React-Router-DOM, Redux, Material UI, JSON Web Tokens (JWT), Google Authentication, MongoDB, Multer, Express, and Node.js.',
-		tags: ['React', 'Javascript', 'Next.js', 'Tailwind', 'Redux', 'MongoDB', 'Express'],
-		// imageUrl: Intro,
+			'A comprehensive management dashboard tailored for authors and administrators. This tool empowers users to manage their book listings efficiently, including adding new titles, updating existing content, and deleting outdated or irrelevant books. It also provides robust review management features, allowing authors to respond to user feedback and maintain the quality of the content.',
+		features: [
+			'Book management (Add, Edit, Delete)',
+			'Review moderation and responses',
+			'User-friendly admin interface',
+			'Real-time updates and notifications',
+		],
+		technologies: ['React', 'ShadCN UI', 'React Query', 'Axios', 'Tailwind CSS', 'Node.js'],
+		links: {
+			demo: 'https://ebookdashboard.netlify.app/',
+			github: 'https://github.com/Sahilbalhra/E-book-Dashboard',
+		},
+		image: '/images/EBook-dashboard.webp',
 	},
 	{
-		title: 'Word Analytics',
+		name: 'NextIMDB',
 		description:
-			'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-		tags: ['React', 'Next.js', 'Tailwind', 'Framer'],
-		// imageUrl: wordanalyticsImg,
+			'A dynamic movie database application that allows users to explore upcoming releases, current hits, and all-time favorites. With powerful search capabilities, users can easily find information about their favorite movies, including ratings, trailers, and reviews. The application is designed to keep movie enthusiasts informed about the latest trends in cinema.',
+		features: [
+			'Upcoming movie previews',
+			'Current box office hits',
+			'Top-rated movie lists',
+			'Comprehensive search functionality',
+		],
+		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'TMDB API'],
+		links: {
+			demo: 'https://next-imdb-jet.vercel.app/',
+			github: 'https://github.com/Sahilbalhra/Next_Imdb/tree/master',
+		},
+		image: '/images/IMDB.webp',
 	},
-] as const;
+	{
+		name: 'Scratch-book',
+		description:
+			"A collaborative platform where users can express their creativity by drawing, sharing, and downloading ideas. This project fosters a community-driven environment where users can contribute to each other's work, building upon ideas and creating unique digital art. The platform supports real-time collaboration and offers various tools for drawing and sketching.",
+		features: [
+			'Collaborative drawing environment',
+			'Downloadable artwork',
+			'Real-time contributions and feedback',
+			'Variety of drawing tools and templates',
+		],
+		technologies: ['React', 'Node.js', 'Socket.io', 'Canvas API', 'Tailwind CSS'],
+		links: {
+			demo: 'https://scratch-book.vercel.app/',
+			github: 'https://github.com/Sahilbalhra/Scratch-book',
+		},
+		image: '/images/SkretchBook.webp',
+	},
+	{
+		name: 'UniFormat',
+		description:
+			'A versatile media conversion tool that allows users to transform images and videos into various formats. This project is designed for users who need to quickly and easily convert media files to meet specific requirements. The application supports a wide range of formats and provides options for customizing the output settings to ensure compatibility across different platforms.',
+		features: [
+			'Image and video conversion',
+			'Support for multiple file formats',
+			'Customizable output settings',
+			'Fast and efficient processing',
+		],
+		technologies: ['Node.js', 'Express', 'FFmpeg', 'React', 'Tailwind CSS'],
+		links: {
+			demo: 'https://uni-format.vercel.app/',
+			github: 'https://github.com/Sahilbalhra/UniFormat',
+		},
+		image: '/images/UniFormat.webp',
+	},
+];

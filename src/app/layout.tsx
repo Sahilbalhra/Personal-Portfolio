@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
-import ThemeSwitch from '@/components/ThemeSwitch';
+import { Toaster } from '@/components/ui/sonner';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import ThemeContextProvider from '@/context/theme-context';
-import { Toaster } from 'react-hot-toast';
 
 import './globals.css';
 
@@ -33,8 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
 						{children}
-						<Toaster position="top-right" />
-						<ThemeSwitch />
+						<Toaster />
 					</ActiveSectionContextProvider>
 				</ThemeContextProvider>
 			</body>
