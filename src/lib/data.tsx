@@ -154,8 +154,17 @@ export const experiencesData = [
 		company: 'Turns',
 		description:
 			'Developed geofenced functionality to facilitate route creation, catering to the needs of laundromat business owners and their drivers.  Implemented automatic driver assignment feature to streamline operations. Implemented multi-role authentication system for enhanced security. Designed and implemented a Refresh Token mechanism to ensure a seamless experience for laundromat business owners.',
+		icon: React.createElement(CgWorkAlt),
+		date: 'Jan 2024 - Jan 2025',
+	},
+	{
+		title: 'Software Engineer',
+		location: 'Noida , Uttar Pradesh',
+		company: 'Pine Labs',
+		description:
+			'I have hands-on experience in developing scalable and maintainable front-end applications using React.js. I built reusable UI components to ensure consistent styling across projects, and implemented robust form validation and error handling using React Hook Form, improving data integrity and user experience. I optimized API interactions by creating custom React hooks, enhancing code clarity and reusability by 25%. Additionally, I integrated Axios interceptors for centralized request and response handling, which strengthened security and improved communication efficiency. To further accelerate development, I actively leveraged Generative AI tools for rapid UI prototyping and code optimization, resulting in a 15% faster delivery cycle.',
 		icon: React.createElement(FaReact),
-		date: 'Jan 2024 - present',
+		date: 'Jan 2024 - Jan 2025',
 	},
 ] as const;
 
