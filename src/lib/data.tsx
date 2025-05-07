@@ -131,41 +131,61 @@ export const attraction = ['better ', 'modern ', 'awesome ', 'Dynamic ', 'Intera
 
 export const experiencesData = [
 	{
-		title: 'SDE Intern',
-		company: 'Marvio360',
-		location: 'Pune, Maharashtra',
-		description:
-			'Streamlining the online booking process to ensure it is both easy and efficient for customers. Implementing a responsive design approach, ensuring the website functions seamlessly across various screen dimensions and devices while maintaining optimal functionality.Developing multiple informative pages within the website to provide users with a comprehensive understanding of its offerings and features',
-		icon: React.createElement(LuGraduationCap),
-		date: 'April 2022 - Sept 2022',
-	},
-	{
-		title: 'FrontEnd engineerr',
-		location: 'Noida , Uttar Pradesh',
-		company: 'Turns',
-		description:
-			'Developed a comprehensive marketing software solution for targeted communication, including email and text messaging, based on user segments. ntegrated a robust business manager functionality, encompassing reporting, order creation, and more, to streamline operations and enhance user experience.',
-		icon: React.createElement(CgWorkAlt),
-		date: 'Dec 2022 - Dec 2023',
-	},
-	{
-		title: 'SDE-1',
-		location: 'Noida , Uttar Pradesh',
-		company: 'Turns',
-		description:
-			'Developed geofenced functionality to facilitate route creation, catering to the needs of laundromat business owners and their drivers.  Implemented automatic driver assignment feature to streamline operations. Implemented multi-role authentication system for enhanced security. Designed and implemented a Refresh Token mechanism to ensure a seamless experience for laundromat business owners.',
-		icon: React.createElement(CgWorkAlt),
-		date: 'Jan 2024 - Jan 2025',
-	},
-	{
-		title: 'Software Engineer',
-		location: 'Noida , Uttar Pradesh',
-		company: 'Pine Labs',
-		description:
-			'I have hands-on experience in developing scalable and maintainable front-end applications using React.js. I built reusable UI components to ensure consistent styling across projects, and implemented robust form validation and error handling using React Hook Form, improving data integrity and user experience. I optimized API interactions by creating custom React hooks, enhancing code clarity and reusability by 25%. Additionally, I integrated Axios interceptors for centralized request and response handling, which strengthened security and improved communication efficiency. To further accelerate development, I actively leveraged Generative AI tools for rapid UI prototyping and code optimization, resulting in a 15% faster delivery cycle.',
-		icon: React.createElement(FaReact),
-		date: 'Jan 2024 - Jan 2025',
-	},
+    title: 'SDE Intern',
+    company: 'Marvio360',
+    location: 'Pune, Maharashtra',
+    description: [
+      'Streamlined the online booking process to enhance user experience and operational efficiency.',
+      'Implemented responsive design principles, ensuring seamless functionality across various devices and screen sizes.',
+      'Developed multiple informative pages to provide users with comprehensive insights into the company\'s offerings and features.'
+    ],
+	techStack: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'MUI','Bootstrap'],
+    icon: React.createElement(LuGraduationCap),
+    date: 'April 2022 – September 2022'
+  },
+  {
+    title: 'Frontend Engineer',
+    company: 'Turns',
+    location: 'Noida, Uttar Pradesh',
+    description: [
+      'Engineered a comprehensive marketing software solution facilitating targeted communication via email and SMS, tailored to user segments.',
+      'Integrated a robust business management module encompassing reporting, order creation, and more, streamlining operations and enhancing user experience.'
+    ],
+	techStack: ['HTML5', 'CSS3', 'JavaScript','TypeScript', 'React.js', 'Axios', 'Material-UI','TailwindCSS'],
+    icon: React.createElement(CgWorkAlt),
+    date: 'December 2022 – December 2023'
+  },
+  {
+    title: 'SDE-1',
+    company: 'Turns',
+    location: 'Noida, Uttar Pradesh',
+    description: [
+      'Developed geofencing functionality to facilitate route creation, catering to the needs of laundromat business owners and their drivers.',
+      'Implemented an automatic driver assignment feature to streamline operations.',
+      'Established a multi-role authentication system to enhance security.',
+      'Designed and implemented a Refresh Token mechanism to ensure a seamless experience for laundromat business owners.'
+    ],
+	techStack: ['HTML5', 'CSS3', 'JavaScript','TypeScript', 'React.js','NodeJS','MUI','TailwindCSS'],
+    icon: React.createElement(CgWorkAlt),
+    date: 'January 2024 – January 2025'
+  },
+  {
+    title: 'Software Engineer',
+    company: 'Pine Labs',
+    location: 'Noida, Uttar Pradesh',
+    description: [
+      'Developed scalable and maintainable front-end applications using React.js.',
+      'Built reusable UI components to ensure consistent styling across projects.',
+      'Implemented robust form validation and error handling using React Hook Form, improving data integrity and user experience.',
+      'Optimized API interactions by creating custom React hooks, enhancing code clarity and reusability by 25%.',
+      'Integrated Axios interceptors for centralized request and response handling, strengthening security and improving communication efficiency.',
+      'Leveraged Generative AI tools for rapid UI prototyping and code optimization, resulting in a 15% faster delivery cycle.'
+    ],
+	techStack: ['HTML5', 'CSS3', 'JavaScript','TypeScript', 'React.js','NodeJS','TailwindCSS','Graphql','Apollo', 'React Hook Form', 'Axios','Redux','Jest', 'React Testing Library'],
+
+    icon: React.createElement(FaReact),
+    date: 'January 2025 –  Present'
+  }
 ] as const;
 
 export const projects = [

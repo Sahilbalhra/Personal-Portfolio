@@ -44,9 +44,25 @@ const ExperienceSection = () => {
 										} `}
 									>
 										<div className="flex flex-col gap-2 h-full  ">
-											<div className="text-xl font-bold tracking-wider capitalize">{data.title}</div>
+											<div className="text-xl font-bold tracking-wider capitalize">{data.company} ({data.title})</div>
 											<div className="text-lg font-semibold tracking-wider">{data.location}</div>
-											<div className="text-sm font-light tracking-wider">{data.description}</div>
+                                            <ul className="list-disc pl-5 text-sm font-light tracking-wider">
+												{data.description.map((point, index) => (
+													<li key={index} className="text-black/70 dark:text-white/70">
+														{point}
+													</li>
+												))}
+                                            </ul>
+											<div className="flex flex-wrap gap-2 mt-2">
+												{data.techStack.map((tech, index) => (
+													<span
+														key={index}
+														className="bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300"
+													>
+														{tech}
+													</span>
+												))}
+											</div>
 										</div>
 									</div>
 								</VerticalTimelineElement>
