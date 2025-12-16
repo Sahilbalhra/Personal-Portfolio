@@ -140,7 +140,7 @@ export const experiencesData = [
 		date: 'April 2022 - Sept 2022',
 	},
 	{
-		title: 'FrontEnd engineerr',
+		title: 'FrontEnd engineer',
 		location: 'Noida , Uttar Pradesh',
 		company: 'Turns',
 		description:
@@ -164,7 +164,7 @@ export const experiencesData = [
 		description:
 			'I have hands-on experience in developing scalable and maintainable front-end applications using React.js. I built reusable UI components to ensure consistent styling across projects, and implemented robust form validation and error handling using React Hook Form, improving data integrity and user experience. I optimized API interactions by creating custom React hooks, enhancing code clarity and reusability by 25%. Additionally, I integrated Axios interceptors for centralized request and response handling, which strengthened security and improved communication efficiency. To further accelerate development, I actively leveraged Generative AI tools for rapid UI prototyping and code optimization, resulting in a 15% faster delivery cycle.',
 		icon: React.createElement(FaReact),
-		date: 'Jan 2024 - Jan 2025',
+		date: 'Jan 2024 - Present',
 	},
 ] as const;
 
