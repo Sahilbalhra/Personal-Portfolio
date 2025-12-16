@@ -31,7 +31,7 @@ export const sections = [
 	{
 		content: (
 			<p className="my-20">
-				<b className="text-primary">Sahil</b>, a software engineer, with <b className="text-primary">2+ years</b>{' '}
+				<b className="text-primary">Sahil</b>, a software engineer, with <b className="text-primary">3+ years</b>{' '}
 				experience. Specializing in <b className="text-primary">full-stack</b> development, passionate about innovative
 				solutions. Let&apos;s create impactful technology together.
 			</p>
