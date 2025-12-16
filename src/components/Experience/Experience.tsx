@@ -44,7 +44,7 @@ const ExperienceSection = () => {
 										} `}
 									>
 										<div className="flex flex-col gap-2 h-full  ">
-											<div className="text-xl font-bold tracking-wider capitalize">{data.title}</div>
+											<div className="text-xl font-bold tracking-wider capitalize">{data.title + " " + data.company}</div>
 											<div className="text-lg font-semibold tracking-wider">{data.location}</div>
 											<div className="text-sm font-light tracking-wider">{data.description}</div>
 										</div>
